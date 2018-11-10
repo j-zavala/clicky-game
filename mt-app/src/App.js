@@ -4,55 +4,55 @@ import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import FriendCard from "./components/FriendCard";
 import Footer from "./components/Footer";
-import fish from "./character.json";
+import character from "./character.json";
 import "./App.css";
 
 //sets state to 0 or empty
 class App extends Component {
   state = {
-    fish,
-    clickedFish: [],
+    character,
+    clickedCharacter: [],
     score: 0
   };
 
-  //when you click on a card ... the fish is taken out of the array
+  //when you click on a card ... the character is taken out of the array
   imageClick = event => {
-    const currentFish = event.target.alt;
-    const FishAlreadyClicked =
-      this.state.clickedFish.indexOf(currentFish) > -1;
+    const currentCharacter = event.target.alt;
+    const CharacterAlreadyClicked =
+      this.state.clickedCharacter.indexOf(currentCharacter) > -1;
 
-    //if you click on a fish that has already been selected, the game is reset and cards reordered
-    if (FishAlreadyClicked) {
+    //if you click on a character that has already been selected, the game is reset and cards reordered
+    if (CharacterAlreadyClicked) {
       this.setState({
-        fish: this.state.fish.sort(function (a, b) {
+        character: this.state.character.sort(function (a, b) {
           return 0.5 - Math.random();
         }),
-        clickedFish: [],
+        clickedCharacter: [],
         score: 0
       });
       alert("You lose. Play again?");
 
-      //if you click on an available fish, your score is increased and cards reordered
+      //if you click on an available character, your score is increased and cards reordered
     } else {
       this.setState(
         {
-          fish: this.state.fish.sort(function (a, b) {
+          character: this.state.character.sort(function (a, b) {
             return 0.5 - Math.random();
           }),
-          clickedFish: this.state.clickedFish.concat(
-            currentFish
+          clickedCharacter: this.state.clickedCharacter.concat(
+            currentCharacter
           ),
           score: this.state.score + 1
         },
-        //if you get all 12 fish corrent you get a congrats message and the game resets        
+        //if you get all 12 character correct you win and game is reset        
         () => {
           if (this.state.score === 12) {
             alert("Yay! You Win!");
             this.setState({
-              fish: this.state.fish.sort(function (a, b) {
+              character: this.state.character.sort(function (a, b) {
                 return 0.5 - Math.random();
               }),
-              clickedFish: [],
+              clickedCharacter: [],
               score: 0
             });
           }
@@ -70,12 +70,12 @@ class App extends Component {
         />
         <Jumbotron />
         <div className="wrapper">
-          {this.state.fish.map(fish => (
+          {this.state.character.map(character => (
             <FriendCard
               imageClick={this.imageClick}
-              id={fish.id}
-              key={fish.id}
-              image={fish.image}
+              id={character.id}
+              key={character.id}
+              image={character.image}
             />
           ))}
         </div>

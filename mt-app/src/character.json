@@ -1,50 +1,50 @@
 [
     {
         "id": 1,
-        "image": "./images/biel.png"
+        "image": "biel.png"
     },
     {
         "id": 2,
-        "image": "./images/bojack.png"
+        "image": "bojack.png"
     },
     {
         "id": 3,
-        "image": "./images/cuddlywhiskers.png"
+        "image": "cuddlywhiskers.png"
     },
     {
         "id": 4,
-        "image": "./images/diane.png"
+        "image": "diane.png"
     },
     {
         "id": 5,
-        "image": "./images/goober.png"
+        "image": "goober.png"
     },
     {
         "id": 6,
-        "image": "./images/herb.png"
+        "image": "herb.png"
     },
     {
         "id": 7,
-        "image": "./images/mr-peanut-butter.png"
+        "image": "mr-peanut-butter.png"
     },
     {
         "id": 8,
-        "image": "./images/pinky.png"
+        "image": "pinky.png"
     },
     {
         "id": 9,
-        "image": "./images/princess-carolyn.png"
+        "image": "princess-carolyn.png"
     },
     {
         "id": 10,
-        "image": "./images/rutabaga.png"
+        "image": "rutabaga.png"
     },
     {
         "id": 11,
-        "image": "./images/sarah-lynne.png"
+        "image": "sarah-lynne.png"
     },
     {
         "id": 12,
-        "image": "./images/todd-chavez.png"
+        "image": "todd-chavez.png"
     }
 ]

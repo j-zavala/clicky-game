@@ -1,7 +1,13 @@
+@font-face {
+	font-family: faune-regular;
+	src: url(../../fonts/Faune-Text_Regular.ttf)
+}
+
 .header{
-	background-color: #ccc;
+	background-color: rgb(243, 226, 226);
 	position: relative;
 	width: 100%;
+	font-family: faune-regular;
 }
 
 h1{
