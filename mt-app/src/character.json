@@ -1,50 +1,50 @@
 [
     {
         "id": 1,
-        "image": "angelfish.jpg"
+        "image": "./images/biel.png"
     },
     {
         "id": 2,
-        "image": "barracuda.jpeg"
+        "image": "./images/bojack.png"
     },
     {
         "id": 3,
-        "image": "butterfly.jpg"
+        "image": "./images/cuddlywhiskers.png"
     },
     {
         "id": 4,
-        "image": "chromis.jpg"
+        "image": "./images/diane.png"
     },
     {
         "id": 5,
-        "image": "clownfish.jpg"
+        "image": "./images/goober.png"
     },
     {
         "id": 6,
-        "image": "creolewrasse.jpg"
+        "image": "./images/herb.png"
     },
     {
         "id": 7,
-        "image": "damselfish.jpg"
+        "image": "./images/mr-peanut-butter.png"
     },
     {
         "id": 8,
-        "image": "grunt.jpg"
+        "image": "./images/pinky.png"
     },
     {
         "id": 9,
-        "image": "parrotfish.jpg"
+        "image": "./images/princess-carolyn.png"
     },
     {
         "id": 10,
-        "image": "rockbeauty.jpg"
+        "image": "./images/rutabaga.png"
     },
     {
         "id": 11,
-        "image": "sergeantmajor.JPG"
+        "image": "./images/sarah-lynne.png"
     },
     {
         "id": 12,
-        "image": "tang.jpg"
+        "image": "./images/todd-chavez.png"
     }
 ]
